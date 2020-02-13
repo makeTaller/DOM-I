@@ -84,3 +84,44 @@ headEl.style.flexDirection = "column";
 headEl.style.textAlign = "center";
 const button = document.querySelector(".cta-text button");
 button.textContent = "Get Started";
+
+//Mid content
+const midContent = document.querySelectorAll("h4");
+midContent[0].textContent = "Features";
+midContent[1].textContent = "About";
+midContent[2].textContent = "Services";
+midContent[3].textContent = "Product";
+midContent[4].textContent = "Vision";
+
+const mainPara = document.querySelectorAll(".main-content p");
+mainPara[0].textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+mainPara[1].textContent = "About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+mainPara[2].textContent = "Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+mainPara[3].textContent = "Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+mainPara[4].textContent = "Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+
+//Contact
+const contact = document.querySelector(".contact h4");
+contact.textContent = "Contact";
+const address = document.querySelectorAll(".contact p");
+address[0].textContent = "123 Way 456 Street \n Somewhere, USA"
+address[1].textContent = "1 (888) 888-8888"
+address[2].textContent = "sales@greatidea.io"
+const contactContainer = document.querySelector(".contact");
+
+//My Button
+const myBtn = document.createElement("button");
+myBtn.textContent = "Click Here";
+myBtn.style.backgroundColor = "darkBlue";
+myBtn.style.color = "white";
+myBtn.style.padding = "10px 30px";
+myBtn.style.cursor = "pointer";
+contactContainer.appendChild(myBtn);
+myBtn.addEventListener("click", myFunction)
+function myFunction() {
+  alert("Have Fun!")
+}
+
+//Footer
+const copy = document.querySelector("footer p");
+copy.textContent = "Copyright Great Idea! 2018";
