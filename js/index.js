@@ -41,7 +41,7 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
-//Navagation
+//Navagation 
 const navItems = document.querySelectorAll('a');
 navItems[0].textContent = siteContent.nav["nav-item-1"];
 navItems[1].textContent = siteContent.nav["nav-item-2"];
@@ -56,7 +56,7 @@ childNavTwo.textContent = "Blog";
 childNav.textContent = "Team";
 nav.prepend(childNavTwo);
 nav.appendChild(childNav);
-// Nav styles
+// Navagation styles
 navItems[0].style.color = "green";
 navItems[1].style.color = "green";
 navItems[2].style.color = "green";
@@ -66,3 +66,21 @@ navItems[5].style.color = "green";
 childNav.style.color = "green";
 childNavTwo.style.color = "green";
 
+
+
+//Image
+const topImg = document.querySelector('#cta-img');
+topImg.setAttribute("src", "img/header-img.png");
+
+const midImg = document.querySelector("#middle-img");
+midImg.setAttribute("src", "img/mid-page-accent.jpg");
+
+//header
+const headEl = document.querySelector(".cta-text h1");
+headEl.textContent = "DOM\n IS\n AWESOME";
+headEl.style.width = "300px";
+headEl.style.display = "flex-wrap";
+headEl.style.flexDirection = "column";
+headEl.style.textAlign = "center";
+const button = document.querySelector(".cta-text button");
+button.textContent = "Get Started";
